@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+  background-color: hsl(218, 28%, 13%);
+  color: white;
+  width: 100%;
+}
+
+/* BIG INTRO STYLING */
+
+.big-intro {
+  background-color: hsl(217, 28%, 15%);
+  background-image: url(images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100%;
+  width: 100%;
+}
+
+/* HEADER STYLING */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 4rem 0 4rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  width: 100%;
+}
+.logo {
+  transition: all 0.5s ease;
+}
+.header ul {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 1.2rem;
+}
+.header li {
+  list-style-type: none;
+}
+.header a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+.header a:hover {
+  opacity: 0.8;
+}
+
+/* INTRO STYLING */
+
+.intro {
+  width: 50%;
+  margin: 7rem auto;
+  text-align: center;
+  padding: 0 0 13rem 0;
+}
+.intro h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+.intro p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 2rem 5rem 2rem 5rem;
+}
+.intro button {
+  width: 15rem;
+  height: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  color: white;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.intro button:hover {
+  transform: scale(1.1);
+}
+
+/* ASSESTS STYLING */
+
+.assets {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+}
+.assets h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.assets p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.3rem;
+}
+.top-assets {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+.top-assets div {
+  width: 35%;
+}
+.bottom-assets {
+  display: flex;
+  justify-content: space-around;
+}
+.bottom-assets div {
+  width: 35%;
+}
+
+/* PRODUCTIVITY STYLING */
+
+.productivity {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+}
+.illustration {
+  width: 50%;
+  padding-left: 5rem;
+}
+.description {
+  width: 40%;
+  padding-left: 5rem;
+}
+.description h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  width: 80%;
+}
+.description p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+.description a {
+  text-decoration: none;
+  color: hsl(175, 27%, 53%);
+  border-bottom: 1px white solid;
+  padding-bottom: 0.2rem;
+}
+.description a:hover {
+  opacity: 0.8;
+}
+
+/* TESTIMONIALS STYLING */
+
+.testimonials-container {
+  display: flex;
+  margin: 10rem auto;
+  width: 80%;
+}
+.footer {
+  display: flex;
+  align-items: center;
+}
+.testimonial {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+.identity h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+}
+.identity p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7rem;
+}
+.identity {
+  margin-left: 1rem;
+}
+.profil-pic {
+  width: 50px;
+  border-radius: 50px;
+}
+.testimonial1 {
+  background-color: hsl(219, 30%, 18%);
+  height: 15rem;
+  padding: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  position: relative;
+}
+.testimonial2 {
+  background-color: hsl(219, 30%, 18%);
+  height: 15rem;
+  padding: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.testimonial3 {
+  background-color: hsl(219, 30%, 18%);
+  height: 15rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.quotes {
+  position: absolute;
+  top: -2rem;
+  left: -1rem;
+  z-index: -1;
+}
+
+/* GET EARLY ACCESS STYLING */
+
+.early-container {
+  background-color: hsl(219, 30%, 18%);
+  width: 50%;
+  height: 15rem;
+  margin: auto;
+  position: absolute;
+  left: 25%;
+  bottom: 75%;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.507);
+  padding: 3rem 4rem 2rem 4rem;
+}
+.early-container h1 {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.early-container p {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  width: 90%;
+  margin: 1.5rem auto;
+}
+.early-container button {
+  font-family: "Open Sans", sans-serif;
+  width: 30%;
+  height: 2.5rem;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.early-container input {
+  font-family: "Open Sans", sans-serif;
+  width: 65%;
+  height: 2.5rem;
+  border-radius: 50px;
+  border: none;
+  padding-left: 1rem;
+}
+.input-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* FOOTER STYLING */
+
+footer {
+  position: relative;
+  background-color: hsl(216, 53%, 9%);
+  margin-top: 20rem;
+  width: 100%;
+  padding: 13rem 0 5rem 5rem;
+}
+.logo-footer {
+  margin-bottom: 1.5rem;
+}
+.contact {
+  display: flex;
+}
+.location-adress {
+  flex: 1;
+  font-family: "Open Sans", sans-serif;
+  padding-left: 1rem;
+}
+.direct-contact {
+  flex: 1;
+  font-family: "Open Sans", sans-serif;
+  padding-left: 4rem;
+}
+.phone {
+  display: flex;
+}
+.phone p {
+  margin-left: 1.5rem;
+}
+.email {
+  display: flex;
+  padding-top: 1.5rem;
+}
+.email p {
+  margin-left: 1.5rem;
+}
+.links {
+  flex: 1;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: space-around;
+}
+.links li {
+  list-style-type: none;
+}
+.links a {
+  text-decoration: none;
+  color: white;
+}
+.social-links {
+  flex: 1;
+}
+.social-links ul {
+  display: flex;
+  justify-content: center;
+}
+.social-links li {
+  list-style-type: none;
+  margin-right: 2rem;
+}
+.social-links a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+.social-links a:hover {
+  opacity: 0.7;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1224px) {
+  .testimonial1 {
+    height: 20rem;
+  }
+  .testimonial2 {
+    height: 20rem;
+  }
+  .testimonial3 {
+    height: 20rem;
+  }
+  .early-container button {
+    font-size: 0.7rem;
+  }
+  .illu-intro {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .big-intro {
+    background-color: hsl(217, 28%, 15%);
+    background-image: url(images/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100%;
+    width: 100%;
+  }
+  .logo {
+    transform: scale(0.8);
+  }
+  .header {
+    padding: 2rem 2rem 0 1rem;
+  }
+  .header ul {
+    width: 40%;
+  }
+  .intro {
+    width: 80%;
+    padding: 0 0 5rem 0;
+  }
+  .intro h1 {
+    padding: 2rem 0 2rem 0;
+    font-size: 2rem;
+  }
+  .intro p {
+    padding: 0 0 2rem 0;
+    line-height: 1.5rem;
+  }
+  .top-assets {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .bottom-assets {
+    flex-direction: column;
+  }
+  .top-assets div {
+    width: 100%;
+  }
+  .bottom-assets div {
+    width: 100%;
+  }
+  .security {
+    margin-top: 5rem;
+  }
+  .any-file {
+    margin-top: 5rem;
+  }
+  .productivity {
+    flex-direction: column;
+  }
+  .illustration {
+    width: 70%;
+    padding: 0;
+  }
+  .description {
+    width: 70%;
+    margin-top: 5rem;
+    padding: 0;
+  }
+  .description h1 {
+    width: 100%;
+    font-size: 2rem;
+  }
+  .testimonials-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial1 {
+    width: 100%;
+    height: 15rem;
+    margin: 2rem auto;
+    line-height: 1.5rem;
+  }
+  .testimonial2 {
+    width: 100%;
+    height: 15rem;
+    margin: 2rem auto;
+    line-height: 1.5rem;
+  }
+  .testimonial3 {
+    width: 100%;
+    height: 15rem;
+    margin: 2rem auto;
+    line-height: 1.5rem;
+  }
+  .early-container {
+    height: 20rem;
+    width: 70%;
+    left: 15%;
+    bottom: 85%;
+  }
+  .input-button {
+    flex-direction: column;
+  }
+  .early-container input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .early-container button {
+    width: 100%;
+    font-size: 1rem;
+  }
+  footer {
+    padding: 15rem 1rem 1rem 2rem;
+  }
+  .links {
+    flex-direction: column;
+  }
+  .contact {
+    flex-direction: column;
+    position: relative;
+  }
+  .location-icon {
+    position: absolute;
+  }
+  .location-adress {
+    margin: 0 0 2rem 2rem;
+  }
+  .direct-contact {
+    padding: 0;
+    margin: 0 0 2rem 0;
+  }
+  .first-ul {
+    margin: 2rem 0 2rem 0;
+  }
+  .second-ul {
+    margin-bottom: 4rem;
+  }
+  .social-links {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    padding: 0;
+  }
+  .header {
+    width: 100%;
+    align-items: center;
+    padding: 2rem 2rem 0 0;
+  }
+  .header ul {
+    width: 50%;
+    justify-content: space-between;
+    font-size: 0.8rem;
+  }
+  .logo {
+    transform: scale(0.6);
+  }
+  .early-container {
+    width: 90%;
+    left: 5%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
